@@ -8,6 +8,9 @@ FrontEnd Mentor Launch Countdown Timer
 ## Tools Used 
 
 ### HTML
-### CSS (responsive layout with Flexbox)
+  - semantic html tags like 'main'
+### CSS
+ - responsive layout with Flexbox
+ - utilized CSS variables for colors
 ### JavaScript (Functionality of the timer)
 ### Font Awesome (Social Icons)
