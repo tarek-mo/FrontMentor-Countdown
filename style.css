@@ -1,0 +1,116 @@
+:root {
+  --veryDarkBlue: hsl(235, 16%, 14%);
+  --softRed: hsl(345, 95%, 68%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Red Hat Text", sans-serif;
+  background: url("./images/pattern-hills.svg"), url("./images/bg-stars.svg"),
+    var(--veryDarkBlue);
+  background-repeat: no-repeat, repeat;
+  background-position: left 0 bottom 0, left 0 top 0;
+  background-size: contain;
+  position: relative;
+  color: white;
+}
+
+main {
+  min-height: 100vh;
+
+  max-width: 90%;
+  margin: 0 auto;
+
+  padding-top: 80px;
+  text-transform: uppercase;
+}
+
+main h1 {
+  text-align: center;
+  margin: 0 15px;
+  letter-spacing: 5px;
+  margin-bottom: 100px;
+}
+
+main .countdown {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.countdown > * {
+  min-width: 200px;
+  min-height: 200px;
+  margin: 15px 15px;
+}
+
+.countdown .time-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  color: var(--softRed);
+  background-color: hsl(236, 21%, 26%);
+  box-shadow: 0 10px 3px rgba(0, 0, 0, 0.247);
+  font-size: 4rem;
+}
+
+.countdown span {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  font-size: 14px;
+  letter-spacing: 5px;
+  color: hsl(237, 18%, 59%);
+}
+
+.social-links {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.social-links a {
+  margin: 0 20px;
+}
+
+.social-links i {
+  font-size: 1.6rem;
+  color: grey;
+}
+
+.social-links i:hover {
+  color: var(--softRed);
+}
+
+@media (max-width: 1022px) {
+  main {
+    position: relative;
+  }
+}
+
+@media (max-width: 511px) {
+  main {
+    margin-bottom: 200px;
+  }
+
+  .social-links {
+    bottom: -100px;
+  }
+  .countdown > * {
+    width: 100%;
+  }
+}

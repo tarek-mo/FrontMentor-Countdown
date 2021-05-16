@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font (Red Hat Text) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Countdown App</title>
+  </head>
+  <body>
+    <main>
+      <h1>We're launching soon</h1>
+      <div class="countdown">
+        <div class="days-container">
+          <div class="time-left days-left">{time}</div>
+          <span>Days</span>
+        </div>
+        <div class="hours-container">
+          <div class="time-left hours-left">{time}</div>
+          <span>hours</span>
+        </div>
+        <div class="minutes-container">
+          <div class="time-left minutes-left">{time}</div>
+          <span>minutes</span>
+        </div>
+        <div class="seconds-container">
+          <div class="time-left seconds-left">{time}</div>
+          <span>seconds</span>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a target="_blank" href="https://www.facebook.com/tarek.mo.02/"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a target="_blank" href="https://twitter.com/tarekMo02"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://github.com/tarek-mo/FrontMentor-Countdown.git"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </main>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
